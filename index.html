@@ -4,23 +4,29 @@
 <head>
   <meta charset="utf-8">
   <title>Conta Spotify</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="./src/style.css">
   <script src="src/main.ts" type="module"></script>
 </head>
 
-<body>
-  <h1>Exiba seus dados de perfil do Spotify</h1>
-  <section id="profile">
-    <h2>Conectado como <span id="displayName"></span></h2>
-    <span id="avatar"></span>
-    <ul>
-      <li> ID do usuário: <span id="id"></span> </li>
-      <li> E-mail: <span id="email"></span> </li>
-      <li> URI do Spotify: <a id="uri" href="#"></a> </li>
-      <li> Link: <a id="url" href="#"></a> </li>
-      <li> Imagem do perfil: <span id="imgUrl"></span> </li>
-    </ul>
-  </section>
+<body class="container">
+  <div>
+    <h1 class="display-4">Exiba seus dados de perfil do Spotify</h1>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">Conectado como <span id="displayName"></span></h2>
+      <span id="avatar"></span>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"> ID do usuário: <span id="id"></span> </li>
+        <li class="list-group-item"> E-mail: <span id="email"></span> </li>
+        <li class="list-group-item"> URI do Spotify: <a id="uri" href="#"></a> </li>
+        <li class="list-group-item"> Link: <a id="url" href="#"></a> </li>
+        <li class="list-group-item"> Imagem do perfil: <span id="imgUrl"></span> </li>
+      </ul>
+    </div>
+  </div>
 </body>
 
 </html>
